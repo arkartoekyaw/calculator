@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="icon" type="image/png" href="logo.png" sizes="32x32" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" rel="stylesheet" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="calculator-grid">
+    	<div class="output">
+	    	<input type="text" name="firstnumber" id="firstnumber" class="ipc" style="font-size:26px" value="" /><span id="operator"></span>
+    		<input type="text" name="secondnumber" id="secondnumber" class="ipc" style="font-size:26px" />
+    		<input type="text" name="result" id="result" class="ipc" style="font-size:30px" value="" />
+    		<input type="hidden" name="tempsign" id="tempsign" class="" />
+    	</div>
+    	
+		    <button data-action="clear" style="font-size:28px" onclick="AC()">AC</button>
+		    <button data-action="delete" style="font-size:28px" onclick="DEL()">DEL</button>
+		    <button name="mod" id="mod" class="sign" >%</button>
+		    <button name="dev" id="dev" class="sign" >÷</button>
+		    <button class="btn">7</button>
+		    <button class="btn">8</button>
+		    <button class="btn">9</button>
+		    <button name="multi" id="multi" class="sign" >x</button>
+		    <button clss="btn">4</button>
+		    <button class="btn">5</button>
+		    <button class="btn">6</button>
+		    <button name="sub" id="sub" class="sign" >-</button>
+		    <button class="btn">1</button>
+		    <button class="btn">2</button>
+		    <button class="btn">3</button>
+		    <button name="add" id="add" class="sign" >+</button>
+		    <button id="decimal" class="btn">.</button>
+		    <button class="btn">0</button>
+		    <button name="cal" id="cal" class="span-two " onclick="calculate()">=</button>
+		 
+		
+
+    </div>
+
+
+
+
+
+
+
+	<script src="app.js" type="text/javascript"></script>
+</body>
+</html>
